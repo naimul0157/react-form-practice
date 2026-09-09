@@ -18,7 +18,7 @@ const Home = () => {
         }
     }
     return (
-        <div className='flex w-full justify-center h-[600px] mt-5'>
+        <div className='flex w-full justify-center h-140 mt-5'>
             <form onSubmit={prevent} className=' text-center px-20 py-40 rounded-xl bg-white flex flex-col md:w-1/3 w-4/5 mx-auto md:h-4/5 h-3/4 justify-start'>
                 <h1 className='font-bold text-xl text-blue-800 mb-3'>
                     Login Form
