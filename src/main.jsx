@@ -8,13 +8,14 @@ import Root from './components/Root/Root.jsx';
 import Home from './components/Home/Home.jsx';
 import Children from './components/Children/Children.jsx';
 import Teachers from './components/Teachers/Teachers.jsx';
+import HookForm from './components/HookForm.jsx/HookForm.jsx';
 
 const router = createBrowserRouter([
   {
     path: '/',
     Component: Root,
     children: [
-      { index: true, Component: Home },
+      { index: true, Component: HookForm },
       {
         path: 'children',
         loader: ()=> fetch('https://jsonplaceholder.typicode.com/users').then(res => res.json()),
