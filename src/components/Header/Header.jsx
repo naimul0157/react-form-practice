@@ -8,6 +8,7 @@ const Header = () => {
                 <NavLink className='btn hover:bg-green-400' to={'/'}>Home</NavLink>
                 <NavLink className='btn hover:bg-green-400' to={'children'}>Children</NavLink>
                 <NavLink className={'btn hover:bg-green-400'} to={'teacher'}>Teachers Panel</NavLink>
+                <NavLink className={'btn hover:bg-green-400'} to={'product_management'}>Product Management</NavLink>
             </nav>
         </div>
     );

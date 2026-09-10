@@ -8,14 +8,14 @@ import Root from './components/Root/Root.jsx';
 import Home from './components/Home/Home.jsx';
 import Children from './components/Children/Children.jsx';
 import Teachers from './components/Teachers/Teachers.jsx';
-import HookForm from './components/HookForm.jsx/HookForm.jsx';
+import ProductManagement from './components/ProductManagement/ProductManagement.jsx';
 
 const router = createBrowserRouter([
   {
     path: '/',
     Component: Root,
     children: [
-      { index: true, Component: HookForm },
+      { index: true, Component: Home },
       {
         path: 'children',
         loader: ()=> fetch('https://jsonplaceholder.typicode.com/users').then(res => res.json()),
@@ -24,6 +24,10 @@ const router = createBrowserRouter([
       { path: 'teacher',
         loader: ()=> fetch('https://jsonplaceholder.typicode.com/posts').then(res => res.json()),
         Component: Teachers },
+      {
+        path: 'product_management',
+        Component: ProductManagement
+      },
       {
         path: '*',
         element: <h3>404 error</h3>
