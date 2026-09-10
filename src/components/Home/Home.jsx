@@ -38,7 +38,7 @@ const Home = () => {
                     <p>
                         <small className='text-red-600'>{error}</small>
                     </p>
-                    <input className='btn bg-blue-600 border-none' type="submit" value="Submit" />
+                    <input className='btn bg-blue-600 border-none' type="submit" value="Login" />
                 </div>
             </form>
         </div>
