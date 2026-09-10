@@ -9,6 +9,7 @@ import Home from './components/Home/Home.jsx';
 import Children from './components/Children/Children.jsx';
 import Teachers from './components/Teachers/Teachers.jsx';
 import ProductManagement from './components/ProductManagement/ProductManagement.jsx';
+import FamilyTree from './components/FamilyTree/FamilyTree.jsx';
 
 const router = createBrowserRouter([
   {
@@ -23,7 +24,7 @@ const router = createBrowserRouter([
       },
       { path: 'teacher',
         loader: ()=> fetch('https://jsonplaceholder.typicode.com/posts').then(res => res.json()),
-        Component: Teachers },
+        Component: FamilyTree },
       {
         path: 'product_management',
         Component: ProductManagement
